@@ -1,0 +1,18 @@
+.card-img-top{
+    width:100%;
+    height:200px;
+    object-fit: contain;
+}
+
+.bg-primary {
+    background-color: #344a63 !important;
+}
+.bg-secondary {
+background-color: #405f7a !important;
+}
+.bg-tertiary {
+background-color: #EBEBEB !important;
+}
+.btn-outline-success {
+    color: #77ffc0 !important;
+    }
