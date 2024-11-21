@@ -1,0 +1,20 @@
+.bg-primary{
+    background-color: #2BA84A !important; 
+    
+}
+.bg-secondary{
+    background-color: #2D3A3A !important;
+}
+.bg-tertiary{
+    background-color: #238232 !important;
+}
+img{
+    width: 75px !important;
+    height: 75px !important;
+    object-fit: contain !important;
+}
+.center {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+  }
