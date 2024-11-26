@@ -26,12 +26,27 @@ img{
 }
 .container{
     position: relative;
-    background-color: #2D3A3A;
 
 }
 
-table{
-    width:1000px !important;
-    height:1000px !important;
+.wrapper{
+    width: 450px;
+    background: white;
+    border-radius:10px;
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+header .current-date{
+    font-size: 1.45rem;
+    font-weight:500;
+}
+.calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
