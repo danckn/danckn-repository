@@ -1,0 +1,107 @@
+.bg-primary{
+    background-color: #2BA84A !important;  
+}
+.bg-secondary{
+    background-color: #2D3A3A !important;
+    justify-content: center;
+}
+.bg-tertiary{
+    background-color: #238232 !important;
+}
+.btn-primary{
+    background-color: #1fa040 !important;
+}
+.btn-secondary{
+    background-color: #137e2e !important;
+}
+.navbar{
+    background-image: linear-gradient(to right, #0bb876, #18e254);
+}
+img{
+    width: 75px !important;
+    height: 75px !important;
+    object-fit: contain !important;
+}
+.center{
+    height: 200px !important;
+    position: relative !important;
+    border: 3px solid green !important;
+}
+.container{
+    position: relative !important;
+
+}
+
+.calendar {
+    display: grid;
+    width: 900px;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 40px;
+}
+.monthYear{
+    text-align:center;
+    font-weight: 600;
+    width: 600px;
+}
+.header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+.days{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    font-size: 30px;
+}
+.day{
+    text-align: center;
+    padding: 5px;
+    color: #999fa6;
+    font-size: 36px;
+}
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+    font-size: 36px;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: 0.2s;
+}
+.date:hover,
+.date.active{
+    background: #db5d5d;
+    color: #fff;
+}
+.date.inactive{
+    color: #d2d2d2;
+}
+.date.inactive:hover{
+    color: #fff;
+}
