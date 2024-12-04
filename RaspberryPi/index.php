@@ -46,7 +46,7 @@ session_start();
             mysqli_stmt_execute($stmt);
 
 
-            header('Location: booking.php');
+            header('Location: calendar.php');
             exit();
         }
     }

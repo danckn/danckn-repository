@@ -105,3 +105,13 @@ img{
 .date.inactive:hover{
     color: #fff;
 }
+
+.carousel-inner {
+    height:  70% !important; /* Adjust to your desired height */
+    width: 100% !important;
+}
+.carousel-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Ensure the image fills the container */
+}
