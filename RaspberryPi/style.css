@@ -6,17 +6,18 @@
     justify-content: center;
 }
 .bg-tertiary{
-    background-color: #238232 !important;
+    background-color: #3e585c !important;
 }
 .btn-primary{
     background-color: #1fa040 !important;
 }
 .btn-secondary{
-    background-color: #137e2e !important;
+    background-color: #f9f8f8 !important;
 }
 .navbar{
     background-image: linear-gradient(to right, #0bb876, #18e254);
 }
+
 img{
     width: 75px !important;
     height: 75px !important;
@@ -114,4 +115,48 @@ img{
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important; /* Ensure the image fills the container */
+}
+
+
+/* Container for the form */
+.form-container {
+    background-color: white; /* White background for the form */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 300px;
+    text-align: center; /* Centers the text inside the form */
+    }
+h1 {
+    color: #333; /* Dark gray text for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+input, select {
+    width: 100%; /* Makes input and select elements take full width */
+    padding: 8px;
+    margin-bottom: 15px; /* Space below input fields */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Makes sure padding and border are included in width */
+}
+button {
+    width: 100%; /* Makes button take full width */
+    padding: 10px;
+    background-color: #4CAF50; /* Green background for button */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners for button */
+    font-size: 16px;
+    cursor: pointer; /* Changes cursor to pointer when hovering */
+}
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.section.label{
+    display: block;
+    margin: 10px 0 5px; /* Adds margin to labels for spacing */
+    font-weight: bold;
+    color: #555; /* Darker text for labels */
 }

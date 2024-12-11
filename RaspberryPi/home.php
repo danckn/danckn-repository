@@ -15,6 +15,17 @@ session_start();
     <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-secondary">
+    <!-- Rotating Logos Section -->
+    <div class="rotating-logos">
+        <div class="rotating-logos__track">
+            <span class="logo-text">LEGION</span>
+            <span class="logo-text">TRUST</span>
+            <span class="logo-text">DISTRITOR</span>
+            <span class="logo-text">VENTURX</span>
+            <span class="logo-text">CAPITAL</span>
+            <span class="logo-text">HEDGIES</span>
+        </div>
+    </div>
     <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -25,15 +36,15 @@ session_start();
         <div class="carousel-item active">
         <img src="images/stock photo for code1.png" class="w-100" alt="">
         <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>text</p>
+            <h5>Computing for everybody</h5>
+            <p>From industries large and small, to the kitchen table tinkerer, to the classroom coder, we make computing accessible and affordable for everybody.</p>
         </div>
         </div>
         <div class="carousel-item">
         <img src="images/stock photo for code2.png" class="w-100" alt="">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>text</p>
+            <h5>Events</h5>
+            <p>Independently run events for Raspberry Pi enthusiasts take place in libraries, cafés, makerspaces, and community centres all over the world. Often called Raspberry Jams, they are an important part of the Raspberry Pi community, and they support young people and adults alike to get started with Raspberry Pi. More experienced users can share their knowledge and learn new skills. If you would like to host your own event</p>
         </div>
         </div>
         <div class="carousel-item">
@@ -52,6 +63,7 @@ session_start();
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+  
 <div class="footer">
     <?php include 'footer.php';?>
 </div>
