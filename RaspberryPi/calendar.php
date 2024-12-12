@@ -43,5 +43,8 @@ include('navbar.php');
         <div class="dates" id="dates"></div>
     </div>
     <script src="main.js"></script>
+    <div class="footer">
+        <?php include 'footer.php';?>
+    </div>
 </body>
 </html>

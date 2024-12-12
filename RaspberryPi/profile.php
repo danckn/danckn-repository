@@ -22,7 +22,7 @@ include('navbar.php');
             list-style: none; /* Remove bullet points */
         }
     </style>
-    <div class="card mb-3">
+    <div class="card mb-3" style="margin-top: 80px;">
         <img src="images/user.jpg" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">Profile</h5>
@@ -57,11 +57,14 @@ include('navbar.php');
                 $result = mysqli_stmt_get_result($stmt);
 
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo "Activity: " . $row['activity'] . ", Date: " . $row['date'] . "<br>";
+                    echo "Activity: " . $row['activity'] . ", Date: " . $row['date']. ", Time: " . $row['time'] . "<br>";
                 }
                 ?>
 
             </div>
+    </div>
+    <div class="footer">
+        <?php include 'footer.php';?>
     </div>
 </body>
 </html>
