@@ -22,11 +22,11 @@ session_start();
                 </li>
                 <?php
                 if(isset($_SESSION['user_username'])){
-                    echo "<li class='nav-item'>
+                    echo "<li class='nav-item' style='width: 1250;'>
                             <a class='nav-link' href='./profile.php'>My Account</a>
                         </li>";
                 } else {
-                    echo "<li class='nav-item'>
+                    echo "<li class='nav-item' style='width: 1250;'>
                             <a class='nav-link' href='./index.php'>Register</a>
                         </li>";
                 }

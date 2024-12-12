@@ -14,6 +14,42 @@ include('navbar.php');
     <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-secondary">
-    
+    <style>
+        .card{
+            margin-top: 80px;
+        }
+        .nav-item {
+            list-style: none; /* Remove bullet points */
+        }
+    </style>
+    <div class="card mb-3">
+        <img src="images/user.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Profile</h5>
+                <p class="card-text">Account details</p>
+                <?php
+                // Retrieve the username from the session
+                $user_username = $_SESSION['user_username'];
+                
+                // Query to fetch the user details
+                $user_query = "SELECT * FROM `user_table` WHERE user_username='$user_username'";
+                $result = mysqli_query($con, $user_query);
+                
+                // Fetch the user data
+                $user_data = mysqli_fetch_array($result);
+                $user_username = $user_data['user_username'];
+                $user_email = $user_data['user_email'];
+                
+                // Output the username and email
+                echo "<li class='nav-item'>
+                        <p class='user-info my-4'>Username: $user_username</p>
+                        <p class='user-info my-4'>Email: $user_email</p>
+                    </li>";
+            ?>
+
+                <p class="card-text">Bookings</p>
+
+            </div>
+    </div>
 </body>
 </html>

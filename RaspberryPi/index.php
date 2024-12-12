@@ -45,7 +45,7 @@ include('navbar.php');
             mysqli_stmt_execute($stmt);
 
 
-            header('Location: calendar.php');
+            header('Location: user_login.php');
             exit();
         }
     }
