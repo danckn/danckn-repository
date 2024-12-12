@@ -1,7 +1,6 @@
 <?php
 include('connect.php');
 include('navbar.php');
-session_start();
 ?>
 
 <!DOCTYPE html>
@@ -15,17 +14,6 @@ session_start();
     <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-secondary">
-    <!-- Rotating Logos Section -->
-    <div class="rotating-logos">
-        <div class="rotating-logos__track">
-            <span class="logo-text">LEGION</span>
-            <span class="logo-text">TRUST</span>
-            <span class="logo-text">DISTRITOR</span>
-            <span class="logo-text">VENTURX</span>
-            <span class="logo-text">CAPITAL</span>
-            <span class="logo-text">HEDGIES</span>
-        </div>
-    </div>
     <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

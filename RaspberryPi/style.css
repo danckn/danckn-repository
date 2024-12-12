@@ -116,47 +116,17 @@ img{
     height: 100% !important;
     object-fit: cover !important; /* Ensure the image fills the container */
 }
-
-
-/* Container for the form */
-.form-container {
+.card{
     background-color: white; /* White background for the form */
     padding: 30px;
+    margin: 0 620;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    width: 300px;
+    width: 700px;
     text-align: center; /* Centers the text inside the form */
-    }
-h1 {
-    color: #333; /* Dark gray text for the heading */
-    margin-bottom: 20px; /* Space below the heading */
+}
+.card-img-top{
+    object-fit: cover;
+    width: 100% !important;
 }
 
-input, select {
-    width: 100%; /* Makes input and select elements take full width */
-    padding: 8px;
-    margin-bottom: 15px; /* Space below input fields */
-    border: 1px solid #ccc; /* Light border for inputs */
-    border-radius: 4px; /* Rounded corners for inputs */
-    box-sizing: border-box; /* Makes sure padding and border are included in width */
-}
-button {
-    width: 100%; /* Makes button take full width */
-    padding: 10px;
-    background-color: #4CAF50; /* Green background for button */
-    color: white; /* White text color */
-    border: none;
-    border-radius: 4px; /* Rounded corners for button */
-    font-size: 16px;
-    cursor: pointer; /* Changes cursor to pointer when hovering */
-}
-button:hover {
-    background-color: #45a049; /* Slightly darker green on hover */
-}
-
-.section.label{
-    display: block;
-    margin: 10px 0 5px; /* Adds margin to labels for spacing */
-    font-weight: bold;
-    color: #555; /* Darker text for labels */
-}

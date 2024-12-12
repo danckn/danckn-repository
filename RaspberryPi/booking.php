@@ -1,7 +1,6 @@
 <?php
 include('connect.php');
 include('navbar.php');
-session_start();
 ?>
 
 <!DOCTYPE html>
@@ -17,60 +16,59 @@ session_start();
 <style>
 /* General body styling */
 body {
-font-family: Arial, sans-serif; /* Sets font style */
-background-color: #f4f4f9; /* Light gray background color */
-margin: 0;
-padding: 0;
-justify-content: center; /* Centers the content horizontally */
-align-items: center; /* Centers the content vertically */
-height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif; /* Sets font style */
+    background-color: #f4f4f9; /* Light gray background color */
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Full viewport height */
 }
 /* Container for the form */
 .form-container {
-background-color: white; /* White background for the form */
-padding: 30px;
-margin: 0 700;
-border-radius: 8px; /* Rounded corners */
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-width: 400px;
-
-text-align: center; /* Centers the text inside the form */
+    background-color: white; /* White background for the form */
+    padding: 30px;
+    margin: 0 700;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 400px;
+    text-align: center; /* Centers the text inside the form */
 }
 h1 {
-color: #333; /* Dark gray text for the heading */
-margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark gray text for the heading */
+    margin-bottom: 20px; /* Space below the heading */
 }
 label {
-display: block;
-margin: 10px 0 5px; /* Adds margin to labels for spacing */
-font-weight: bold;
-color: #555; /* Darker text for labels */
+    display: block;
+    margin: 10px 0 5px; /* Adds margin to labels for spacing */
+    font-weight: bold;
+    color: #555; /* Darker text for labels */
 }
 input, select {
-width: auto; /* Makes input and select elements take full width */
-padding: 8px;
-margin-bottom: 15px; /* Space below input fields */
-border: 1px solid #ccc; /* Light border for inputs */
-border-radius: 4px; /* Rounded corners for inputs */
-box-sizing: border-box; /* Makes sure padding and border are included in width */
+    width: auto; /* Makes input and select elements take full width */
+    padding: 8px;
+    margin-bottom: 15px; /* Space below input fields */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Makes sure padding and border are included in width */
 }
 button {
-width: 100%; /* Makes button take full width */
-padding: 10px;
-background-color: #4CAF50; /* Green background for button */
-color: white; /* White text color */
-border: none;
-border-radius: 4px; /* Rounded corners for button */
-font-size: 16px;
-cursor: pointer; /* Changes cursor to pointer when hovering */
+    width: 100%; /* Makes button take full width */
+    padding: 10px;
+    background-color: #4CAF50; /* Green background for button */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners for button */
+    font-size: 16px;
+    cursor: pointer; /* Changes cursor to pointer when hovering */
 }
 button:hover {
-background-color: #45a049; /* Slightly darker green on hover */
+    background-color: #45a049; /* Slightly darker green on hover */
 }
 /* Optional: Styles for responsiveness */
 @media (max-width: 400px) {
 .form-container {
-width: 90%; /* Makes the form container take up 90% width on smaller screens */
+    width: 90%; /* Makes the form container take up 90% width on smaller screens */
 }
 }
 </style>
