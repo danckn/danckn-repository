@@ -38,8 +38,8 @@ include('navbar.php');
         <div class="carousel-item">
         <img src="images/stock photo for code3.png" class="w-100" alt="">
         <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>text</p>
+            <h5>Activities</h5>
+            <p>We run activities that will boost children's knowledge of computer science and grow them to be programming experts!</p>
         </div>
         </div>
     </div>

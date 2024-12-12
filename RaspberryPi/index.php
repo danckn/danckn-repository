@@ -15,6 +15,7 @@ include('navbar.php');
 </head>
 <body>
     <?php
+
     if (isset($_POST['user_register'])) {
         // Sanitize user input
         $user_username = mysqli_real_escape_string($con, $_POST['user_username']);
@@ -43,6 +44,15 @@ include('navbar.php');
             $stmt = mysqli_prepare($con, $insert_query);
             mysqli_stmt_bind_param($stmt, 'sssss', $user_username, $first_name, $last_name, $user_email, $hash_password);
             mysqli_stmt_execute($stmt);
+
+            // Retrieve the ID of the newly inserted user
+            $user_id = mysqli_insert_id($con);
+
+            // Store user_id in a session
+            $_SESSION['user_id'] = $user_id;
+
+            // Debug or use the user_id
+            echo "<script>alert('User registered successfully. User ID: $user_id');</script>";
 
 
             header('Location: user_login.php');

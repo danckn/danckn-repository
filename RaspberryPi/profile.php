@@ -45,9 +45,21 @@ include('navbar.php');
                         <p class='user-info my-4'>Username: $user_username</p>
                         <p class='user-info my-4'>Email: $user_email</p>
                     </li>";
-            ?>
+                ?>
 
                 <p class="card-text">Bookings</p>
+                <?php
+                $user_id = $_SESSION['user_id'];
+                $query = "SELECT * FROM bookings WHERE user_id = ?";
+                $stmt = mysqli_prepare($con, $query);
+                mysqli_stmt_bind_param($stmt, 'i', $user_id);
+                mysqli_stmt_execute($stmt);
+                $result = mysqli_stmt_get_result($stmt);
+
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "Activity: " . $row['activity'] . ", Date: " . $row['date'] . "<br>";
+                }
+                ?>
 
             </div>
     </div>
