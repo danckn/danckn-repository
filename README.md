@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm danckn</h1>
 <h3 align="center">An aspiring developer</h3>
 
-- 🔭 I’m currently working on **RedHat Academy Courses**
+- 🔭 I’m currently working on **Coursework**
 
-- 🌱 I’m currently learning **RedHat Academy Courses and some PHP**
+- 🌱 I’m currently learning **PHP, CSS, JS**
 
 - 📫 How to reach me **danielchan.121106@gmail.com**
 
